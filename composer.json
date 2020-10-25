@@ -1,0 +1,16 @@
+{
+    "name": "drusu-dev/itinerary-maker",
+    "type": "library",
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "IM\\": "src/"
+        }
+    },
+    "description": "Discovers itinerary based on tickets and can return a step by step instruction list."
+}
