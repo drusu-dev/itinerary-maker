@@ -9,8 +9,11 @@ Discovers itinerary based on tickets and can return a step by step instruction l
 ## Getting Started
 
 Initialize ItineraryMaker with an array of tikets(provided) and call ```->create()```.
+
 Ticket types available: AirplaneTicket, BusTicket, CustomTicket.
+
 For array output, call ```->getTickets()```.
+
 For a human-readable list of instructions, call ```->getInstructions()```.
 
 ```php
