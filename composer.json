@@ -1,6 +1,7 @@
 {
     "name": "drusu-dev/itinerary-maker",
     "type": "library",
+    "license": "MIT",
     "require": {
         "php": "^7.4"
     },
