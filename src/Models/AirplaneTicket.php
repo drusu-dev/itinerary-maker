@@ -51,37 +51,8 @@ class AirplaneTicket extends Ticket
         $this->flightNumber = $flightNumber;
     }
 
-    /**
-     * @return string
-     */
-    public function getTransportMethod(): string
-    {
-        return 'Airplane';
-    }
-
     public function getInstruction(): string
     {
-        return "From {$this->getDepartureLocation()}, board flight {$this->getFlightNumber()} to {$this->getArrivalLocation()} from gate {$this->getGate()}, seat {$this->getSeat()}.";
-    }
-
-    public function getFlightNumber()
-    {
-        return $this->flightNumber;
-    }
-
-    /**
-     * @return string
-     */
-    public function getGate(): string
-    {
-        return $this->gate;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSeat(): string
-    {
-        return $this->seat;
+        return "From {$this->departureLocation}, board flight {$this->flightNumber} to {$this->arrivalLocation} from gate {$this->gate}, seat {$this->seat}.";
     }
 }

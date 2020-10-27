@@ -13,7 +13,6 @@ use DateTime;
  */
 class BusTicket extends Ticket
 {
-
     /**
      * @var string
      */
@@ -40,17 +39,9 @@ class BusTicket extends Ticket
         $this->busNumber = $busNumber;
     }
 
-    /**
-     * @return string
-     */
-    public function getTransportMethod(): string
-    {
-        return 'Bus';
-    }
-
     public function getInstruction(): string
     {
-        return "Board the {$this->getTransportMethod()} {$this->getBusNumber()} from {$this->getDepartureLocation()} to {$this->getArrivalLocation()}";
+        return "Board the Bus {$this->busNumber} from {$this->departureLocation} to {$this->arrivalLocation}";
     }
 
     /**

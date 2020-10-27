@@ -16,23 +16,23 @@ abstract class Ticket implements TicketInterface
     /**
      * @var string
      */
-    private string $uuid;
+    protected string $uuid;
     /**
      * @var DateTime
      */
-    private DateTime $departureTime;
+    protected DateTime $departureTime;
     /**
      * @var DateTime
      */
-    private DateTime $arrivalTime;
+    protected DateTime $arrivalTime;
     /**
      * @var string
      */
-    private string $departureLocation;
+    protected string $departureLocation;
     /**
      * @var string
      */
-    private string $arrivalLocation;
+    protected string $arrivalLocation;
 
     /**
      * Ticket constructor.

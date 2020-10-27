@@ -14,7 +14,6 @@ use DateTime;
  */
 class CustomTicket extends Ticket
 {
-
     /**
      * @var string
      */
@@ -43,14 +42,7 @@ class CustomTicket extends Ticket
 
     public function getInstruction(): string
     {
-        return "Take {$this->getTransportMethod()} transport from {$this->getDepartureLocation()} to {$this->getArrivalLocation()}.";
+        return "Take your {$this->transportMethod} transport from {$this->getDepartureLocation()} to {$this->getArrivalLocation()}.";
     }
 
-    /**
-     * @return string
-     */
-    public function getTransportMethod(): string
-    {
-        return $this->transportMethod;
-    }
 }

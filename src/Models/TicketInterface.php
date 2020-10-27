@@ -41,10 +41,5 @@ interface TicketInterface
     /**
      * @return string
      */
-    public function getTransportMethod(): string;
-
-    /**
-     * @return string
-     */
     public function getInstruction(): string;
 }
