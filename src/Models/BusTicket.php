@@ -43,12 +43,4 @@ class BusTicket extends Ticket
     {
         return "Board the Bus {$this->busNumber} from {$this->departureLocation} to {$this->arrivalLocation}";
     }
-
-    /**
-     * @return string
-     */
-    public function getBusNumber(): string
-    {
-        return $this->busNumber;
-    }
 }

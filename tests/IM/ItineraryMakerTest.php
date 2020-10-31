@@ -45,10 +45,10 @@ class ItineraryMakerTest extends TestCase
                 ],
                 'expectInstructions' => [
                     'Start',
-                    'Take taxi transport from somewhere to nextwhere.',
-                    'Take carpet transport from somewhere to nextwhere.',
-                    'Take custom transport from somewhere to nextwhere.',
-                    'Take spaceship transport from somewhere to nextwhere.',
+                    'Take your taxi transport from somewhere to nextwhere.',
+                    'Take your carpet transport from somewhere to nextwhere.',
+                    'Take your custom transport from somewhere to nextwhere.',
+                    'Take your spaceship transport from somewhere to nextwhere.',
                     'Last destination reached.'
                 ]
             ],
@@ -67,8 +67,8 @@ class ItineraryMakerTest extends TestCase
                 ],
                 'expectInstructions' => [
                     'Start',
-                    'Take custom transport from somewhere to nextwhere.',
-                    'Take custom transport from somewhere to nextwhere.',
+                    'Take your custom transport from somewhere to nextwhere.',
+                    'Take your custom transport from somewhere to nextwhere.',
                     'Board the Bus 112 from somewhere to nextwhere',
                     'From somewhere, board flight AG6547 to nextwhere from gate 22, seat 13C.',
                     'Last destination reached.',
