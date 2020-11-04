@@ -40,6 +40,17 @@ class CustomTicket extends Ticket
         $this->transportMethod = $transportMethod;
     }
 
+    /**
+     * @return string
+     */
+    public function getTransportMethod(): string
+    {
+        return $this->transportMethod;
+    }
+
+    /**
+     * @return string
+     */
     public function getInstruction(): string
     {
         return "Take your {$this->transportMethod} transport from {$this->getDepartureLocation()} to {$this->getArrivalLocation()}.";

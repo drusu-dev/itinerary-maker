@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 namespace IM\Models;
 
 
@@ -22,6 +21,9 @@ class AirplaneTicket extends Ticket
      * @var string
      */
     private string $gate;
+    /**
+     * @var string
+     */
     private string $flightNumber;
 
     /**
@@ -51,6 +53,33 @@ class AirplaneTicket extends Ticket
         $this->flightNumber = $flightNumber;
     }
 
+    /**
+     * @return string
+     */
+    public function getSeat(): string
+    {
+        return $this->seat;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGate(): string
+    {
+        return $this->gate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFlightNumber(): string
+    {
+        return $this->flightNumber;
+    }
+
+    /**
+     * @return string
+     */
     public function getInstruction(): string
     {
         return "From {$this->departureLocation}, board flight {$this->flightNumber} to {$this->arrivalLocation} from gate {$this->gate}, seat {$this->seat}.";
